@@ -1,0 +1,240 @@
+/* Global */
+$zolty: #FED136;
+$czarny: #222222;
+$szary: #777777;
+$szary_jasny: #F7F7F7;
+$bialy: #fff;
+
+$font-text:  'Roboto Slab', serif;
+$font-header:  'Montserrat', sans-serif;
+$font-subtitle:  'Noto Serif', serif;
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: #fff;
+    color: $czarny;
+    font-size: 14px;
+    line-height: 1.7;
+    font-family: $font-text;
+}
+div, img {
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+p {
+    font-family: $font-text;
+    text-transform: none;
+    font-size: 14px;
+    color: $szary;
+}
+a {
+    text-decoration: none;
+}
+h1 {
+    font-family: $font-header;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 40px; 
+    letter-spacing: 1px; 
+    margin: 0;       
+}
+h2 {
+    font-family: $font-subtitle;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px; 
+    color: $szary; 
+    margin: 0 0 80px 0;     
+}
+h3 {
+    font-family: $font-header;  
+    font-size: 18px;
+    margin: 0;    
+}
+section {
+    width: 100%;  
+    padding: 120px 0;
+}
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+
+/* header */
+.banner {
+    height: 100vh;
+    background-image: url('../images/slider.jpg');
+    background-size: cover;
+    max-height: 1200px;
+}
+.logo { 
+    width: 95px;
+    margin-left: 5px;
+}
+header ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 50px 0;
+}
+header li {
+    display: inline-block;
+    margin-right: 10px;
+}
+header a {
+    color: $bialy;
+    font-family: $font-header;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px; 
+    letter-spacing: 1px;
+    margin-left: 40px;    
+}
+header a:hover {
+    color: $zolty;
+}
+.splash {
+    height: 100%;
+    position: relative;
+    background-position: center center;
+}
+.splash-inner {
+    position: absolute;
+    width: 100%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.page-subtitle {
+    font-size: 40px;
+    color: $bialy;
+    margin: 15px;
+}
+.page-title {
+    font-size: 75px; 
+    color: $bialy;  
+    font-weight: 800;
+    letter-spacing: -2px; 
+}
+.btn-yellow {
+    background: $zolty;
+    font-size: 18px; 
+    display: inline-block;
+    font-family: $font-header;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 20px 60px;
+    border-radius: 5px; 
+    margin: 40px;
+}
+.btn-yellow a {
+    font-size: 18px;
+    font-weight: 800;
+    color: $bialy;
+    margin: 0px; 
+}
+.btn-yellow a:hover {
+    color: $czarny;
+}
+
+/* services */
+.service {
+    width: 290px;
+}
+.services i {
+    font-size: 34px;
+    border: 3px solid $zolty;
+    width: 78px;
+    height: 78px;
+    line-height: 78px;
+    color: $zolty;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+
+/* portfolio */
+.portfolio {
+    background: $szary_jasny;
+}
+.podpis h2 {
+    font-size: 14px; 
+    line-height: 1;  
+    margin: 0 0 5px 0;    
+}
+.portfolio-item {
+    width: 290px;
+}
+.portfolio .row > *  {
+    padding: 0;
+}
+
+.podpis {
+    background: $bialy;
+    height: 90px;
+    margin-bottom: 5px;
+}
+
+/* footer */
+footer {
+    width: 100%;
+}
+.rights, social {
+    height: 120px;   
+}
+.rightsP {
+    font-family: $font-header;
+    font-size: 14px;
+    font-weight: 600;    
+}
+footer ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+footer li {
+    display: inline-block;
+    font-size: 0;
+    margin-right: 10px;
+}
+footer i {
+    font-size: 20px;
+    width: 40px;
+    height: 40px;    
+    border-radius: 50%;         
+    background: $czarny;
+    color: $bialy;
+}
+footer .fab, .fa-brands {
+    line-height: 40px;
+}
+
+@media (max-width: 768px) {
+    .page-subtitle {
+        font-size: 24px;
+        color: $bialy;
+        margin: 22px;
+        line-height: 1.4;
+    }
+    .page-title {
+        font-size: 55px; 
+        color: $bialy;  
+        font-weight: 600;
+        letter-spacing: -2px;
+        line-height: 1.4;
+        margin: 0 10px; 
+    } 
+    img.logo {
+        margin: 50px 10px 0 16px;
+    }  
+    .rights {
+        height: 60px;
+    } 
+}
